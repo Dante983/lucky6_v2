@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('location')->nullable();
             $table->integer('admin_type')->default(1);
+            $table->rememberToken();
             $table->timestamps();
         });
 
